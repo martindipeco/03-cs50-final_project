@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    My courses
+{% endblock %}
+
+{% block main %}
+
+    <h2>My courses</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Course</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in mycourses_t %}
+                <tr>
+                    <td>{{ i.course }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <p>Please refer to <a href = "/allcourses" target = blank>All Courses</a> for time schedule</p>
+
+{% endblock %}

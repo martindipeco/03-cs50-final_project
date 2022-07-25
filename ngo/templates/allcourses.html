@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    All courses
+{% endblock %}
+
+{% block main %}
+
+    <h2>All courses</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Course name</th>
+                <th>Day</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in allc %}
+                <tr>
+                    <td>{{ i.course }}</td>
+                    <td>{{ i.day }} </td>
+                    <td>{{ i.time }} </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

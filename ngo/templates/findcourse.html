@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Find course(s)
+{% endblock %}
+
+{% block main %}
+    <form action="/signup" method="post">
+        <select id="courses" name="courses" size="5">
+            <option disabled selected value = "">Please select course</option>
+            {% for i in courses %}
+                <option value= "{{i.course}}">{{i.course}}</option>
+            {% endfor %}
+        </select>
+        <p>
+        <button class="btn btn-primary" type="submit">Sign up</button>
+        </p>
+    </form>
+
+    <p>Please refer to <a href = "/allcourses" target = blank>All Courses</a> for time schedule</p>
+
+{% endblock %}
