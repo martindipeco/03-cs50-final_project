@@ -10,7 +10,7 @@ A web app to provide free educational services for N.G.O.s working with local co
 In this first phase it only allows students to register to courses.
 Its structure is based on [CS50´s Finance](https://finance.cs50.net/)
 It runs under Flask, CS50´s served. Written in Python, using Jinja, CSS and HTML5. Database created with SQlite3
-You can check the database structure [here](https://drawsql.app/martindipeco/diagrams/ngohttps://drawsql.app/martindipeco/diagrams/ngo)
+You can check the database structure [here](https://drawsql.app/martindipeco/diagrams/ngo)
 
 ##### What does it do?
 
